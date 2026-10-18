@@ -1,0 +1,9 @@
+# Зависимости на приложението (Python 3.10 - 3.14).
+# Инсталиране: python -m pip install -r requirements.txt
+Django==5.2.18          # уеб рамката (ORM, миграции, потребители, CSRF, шаблони)
+openpyxl==3.1.5         # експорт на справките в Excel
+
+# Тестове
+pytest==9.1.1
+pytest-django==4.14.0
+coverage==7.16.2

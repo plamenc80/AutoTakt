@@ -1,0 +1,44 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# База данни SQLite (създава се автоматично с python manage.py start)
+*.db
+*.db-shm
+*.db-wal
+*.sqlite3
+
+# Качени снимки от проверките (пазят се извън static)
+private/
+
+# Екранни снимки от проучването на дизайна (големи, само за вътрешна употреба)
+docs/design-research/*.png
+
+# Редактори и ОС
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.swp
+
+# Дипломна работа: междинните файлове при сглобяването (остават само готовите DOCX и PDF)
+docs/paper/out/*
+!docs/paper/out/Дипломна_работа.docx
+!docs/paper/out/Дипломна_работа.pdf
+
+# Резервни копия на базата (*.db.bak-…)
+*.db.bak*
+*.bak
+
+# Логове и тайни
+*.log
+.env
+.env.*
+
+# Node модули (ако се появят от инструменти)
+node_modules/
