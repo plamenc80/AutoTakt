@@ -1,0 +1,43 @@
+"""
+Марки и модели, разпространени в България - за подсказките при въвеждане на автомобил.
+Списъкът е ръчно съставен и може да се допълва; винаги може да се напише и марка/модел, които ги няма тук.
+"""
+
+MAKES = [
+    ('Alfa Romeo', ['147', '156', '159', 'Giulietta', 'Giulia', 'MiTo', 'Stelvio']),
+    ('Audi', ['A1', 'A3', 'A4', 'A5', 'A6', 'A8', 'Q2', 'Q3', 'Q5', 'Q7', 'TT']),
+    ('BMW', ['116d', '118d', '120d', '318d', '320d', '330d', '520d', '530d', 'X1', 'X3', 'X5']),
+    ('BYD', ['Atto 3', 'Dolphin', 'Seal']),
+    ('Chevrolet', ['Aveo', 'Captiva', 'Cruze', 'Lacetti', 'Spark']),
+    ('Citroën', ['Berlingo', 'C1', 'C3', 'C4', 'C4 Picasso', 'C5', 'C-Elysée']),
+    ('Cupra', ['Born', 'Formentor', 'Leon']),
+    ('Dacia', ['Duster', 'Jogger', 'Logan', 'Sandero', 'Spring']),
+    ('Fiat', ['500', 'Bravo', 'Doblo', 'Grande Punto', 'Panda', 'Punto', 'Tipo']),
+    ('Ford', ['C-Max', 'Fiesta', 'Focus', 'Galaxy', 'Kuga', 'Mondeo', 'Puma', 'S-Max', 'Transit']),
+    ('Honda', ['Accord', 'Civic', 'CR-V', 'Jazz', 'HR-V']),
+    ('Hyundai', ['i10', 'i20', 'i30', 'i40', 'Ioniq', 'Kona', 'Santa Fe', 'Tucson']),
+    ('Jaguar', ['E-Pace', 'F-Pace', 'XE', 'XF']),
+    ('Jeep', ['Cherokee', 'Compass', 'Grand Cherokee', 'Renegade']),
+    ('Kia', ['Ceed', 'Niro', 'Picanto', 'Rio', 'Sorento', 'Sportage', 'Stonic']),
+    ('Land Rover', ['Defender', 'Discovery', 'Discovery Sport', 'Range Rover', 'Range Rover Evoque']),
+    ('Lexus', ['CT', 'IS', 'NX', 'RX', 'UX']),
+    ('Mazda', ['2', '3', '6', 'CX-3', 'CX-30', 'CX-5', 'MX-5']),
+    ('Mercedes-Benz', ['A 180', 'B 180', 'C 200', 'C 220', 'CLA', 'E 220', 'E 350', 'GLA', 'GLC', 'ML', 'Sprinter', 'Vito']),
+    ('Mini', ['Cooper', 'Countryman', 'One']),
+    ('Mitsubishi', ['ASX', 'Colt', 'Lancer', 'Outlander', 'Pajero', 'L200']),
+    ('Nissan', ['Juke', 'Micra', 'Note', 'Qashqai', 'X-Trail', 'Leaf', 'Navara']),
+    ('Opel', ['Astra', 'Corsa', 'Crossland', 'Grandland', 'Insignia', 'Meriva', 'Mokka', 'Vectra', 'Zafira']),
+    ('Peugeot', ['107', '206', '207', '208', '308', '407', '508', '2008', '3008', '5008', 'Partner']),
+    ('Porsche', ['911', 'Cayenne', 'Macan', 'Panamera', 'Taycan']),
+    ('Renault', ['Captur', 'Clio', 'Kangoo', 'Laguna', 'Megane', 'Scenic', 'Trafic', 'Zoe']),
+    ('Seat', ['Altea', 'Arona', 'Ateca', 'Ibiza', 'Leon', 'Toledo']),
+    ('Skoda', ['Fabia', 'Kamiq', 'Karoq', 'Kodiaq', 'Octavia', 'Rapid', 'Scala', 'Superb', 'Yeti']),
+    ('Smart', ['ForFour', 'ForTwo']),
+    ('Subaru', ['Forester', 'Impreza', 'Legacy', 'Outback', 'XV']),
+    ('Suzuki', ['Grand Vitara', 'Ignis', 'Jimny', 'Swift', 'SX4', 'Vitara']),
+    ('Tesla', ['Model 3', 'Model S', 'Model Y']),
+    ('Toyota', ['Auris', 'Avensis', 'Aygo', 'C-HR', 'Corolla', 'Land Cruiser', 'Prius', 'RAV4', 'Yaris']),
+    ('Volkswagen', ['Caddy', 'Golf', 'Jetta', 'Passat', 'Polo', 'Sharan', 'T-Roc', 'Tiguan', 'Touareg', 'Touran', 'Transporter', 'Up!']),
+    ('Volvo', ['S60', 'S80', 'V40', 'V60', 'V70', 'XC40', 'XC60', 'XC90']),
+    ('VW', ['Golf', 'Passat', 'Polo', 'Tiguan', 'Touran']),
+]
