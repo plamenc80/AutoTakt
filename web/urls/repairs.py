@@ -1,0 +1,41 @@
+"""Ремонти, табло на механика и дигитална проверка."""
+from django.urls import path
+
+from web.views import inspections, repairorders, workshop
+
+urlpatterns = [
+    path("RepairOrders", repairorders.index, name="repairorders.index"),
+    path("RepairOrders/Details/<int:id>", repairorders.details, name="repairorders.details"),
+    path("RepairOrders/Create", repairorders.create, name="repairorders.create"),
+    path("RepairOrders/Invoice/<int:id>", repairorders.invoice, name="repairorders.invoice"),
+    path("RepairOrders/UpdateInfo/<int:id>", repairorders.update_info, name="repairorders.updateinfo"),
+    path("RepairOrders/AddService/<int:id>", repairorders.add_service, name="repairorders.addservice"),
+    path("RepairOrders/RemoveService/<int:id>", repairorders.remove_service, name="repairorders.removeservice"),
+    path("RepairOrders/AddPart/<int:id>", repairorders.add_part, name="repairorders.addpart"),
+    path("RepairOrders/RemovePart/<int:id>", repairorders.remove_part, name="repairorders.removepart"),
+    path("RepairOrders/ChangeStatus/<int:id>", repairorders.change_status, name="repairorders.changestatus"),
+    path("RepairOrders/AddPayment/<int:id>", repairorders.add_payment, name="repairorders.addpayment"),
+    path("RepairOrders/ToggleService/<int:id>", repairorders.toggle_service, name="repairorders.toggleservice"),
+    path("RepairOrders/Recommend/<int:id>", repairorders.recommend, name="repairorders.recommend"),
+    path("RepairOrders/Decide/<int:id>", repairorders.decide, name="repairorders.decide"),
+    path("Workshop", workshop.index, name="workshop.index"),
+    path("Workshop/Board", workshop.board, name="workshop.board"),
+    path("Workshop/Move", workshop.move, name="workshop.move"),
+    path("Workshop/CheckIn", workshop.check_in, name="workshop.checkin"),
+    path("Workshop/Take/<int:id>", workshop.take, name="workshop.take"),
+    path("Workshop/Status/<int:id>", workshop.status, name="workshop.status"),
+    path("Workshop/Job/<int:id>", workshop.job, name="workshop.job"),
+    path("Workshop/Toggle/<int:id>", workshop.toggle, name="workshop.toggle"),
+    path("Workshop/AddService/<int:id>", workshop.add_service, name="workshop.addservice"),
+    path("Workshop/AddPart/<int:id>", workshop.add_part, name="workshop.addpart"),
+    path("Workshop/Recommend/<int:id>", workshop.recommend, name="workshop.recommend"),
+    path("Inspections/Start", inspections.start, name="inspections.start"),
+    path("Inspections/Index/<int:id>", inspections.index, name="inspections.index"),
+    path("Inspections/Rate", inspections.rate, name="inspections.rate"),
+    path("Inspections/Photo", inspections.photo, name="inspections.photo"),
+    path("Inspections/DeletePhoto", inspections.delete_photo, name="inspections.deletephoto"),
+    path("Inspections/Recommend", inspections.recommend, name="inspections.recommend"),
+    path("Inspections/Complete/<int:id>", inspections.complete, name="inspections.complete"),
+    path("Inspections/Report/<int:id>", inspections.report, name="inspections.report"),
+    path("Inspections/PhotoFile/<int:id>", inspections.photo_file, name="inspections.photofile"),
+]
